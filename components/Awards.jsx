@@ -68,7 +68,7 @@ const Awards = () => {
       </div>
 
       {/* Right Side - 2x2 Grid */}
-      <div className="md:w-1/2 grid grid-cols-2 gap-6">
+      <div className="md:w-1/2 grid grid-cols-2 gap-4">
         {/* Grid Item 1 */}
         <div className="bg-white rounded-lg shadow-md flex flex-col items-left gap-3 justify-center p-4 h-[320px] ">
           <div className="w-[50px] h-[50px] mb-3">
