@@ -5,89 +5,88 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import { FaWhatsapp, FaDollarSign, FaUserCircle } from "react-icons/fa";
+import { FaWhatsapp, FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="flex h-40">
-      {/* Left Side */}
-      <div className="w-2/12 flex flex-col h-full">
-        {/* Notification Bar */}
-        <div className="bg-[#FF7902] py-2">
-          <p className="text-white text-center text-lg font-semibold">Notification Bar Tag</p>
-        </div>
+    <header className="w-full">
+      <div className="flex flex-col md:flex-row ">
+        {/* Left Side - Logo and Notification */}
+        <div className="md:w-2/12 flex-col hidden md:flex  bg-gray-100">
+  <div className="bg-[#FF7902] py-2 text-center">
+    <p className="text-white text-sm md:text-lg font-semibold">Notification Bar Tag</p>
+  </div>
+  <div className="flex items-center justify-center w-full h-full">
+    <Image
+      src="/Logo.png"
+      alt="Company Logo"
+      width={120}
+      height={80}
+      className="object-contain" // Changed from object-cover to object-contain
+    />
+  </div>
+</div>
 
-        {/* Logo */}
-        <div className="bg-gray-100 flex items-center justify-center flex-1">
-          <Image
-            src="/Logo.png"
-            alt="Description of image"
-            width={150}
-            height={100}
-            layout="intrinsic"
-          />
-        </div>
-      </div>
-
-      {/* Right Side */}
-      <div className="flex-1 flex flex-col h-full">
-        {/* Top Banner */}
-        <div className="flex items-center justify-between bg-[#0A2540] text-white px-4 py-2">
-          <p className="text-xs w-9/12 leading-tight">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
-            reiciendis asperiores vitae doloremque a nisi pariatur amet deleniti
-            quo id iusto! Quae reiciendis unde doloremque laborum earum fugit
-            libero. Sunt!
-          </p>
-
-          <div className="flex items-center gap-4">
-            <button className="flex items-center bg-white text-blue-950 px-4 py-2 rounded-sm hover:bg-[#E67002] gap-2">
-              <span className="font-bold text-sm">View More</span>
-              <FontAwesomeIcon className="w-4 h-4" icon={faArrowRight} />
-            </button>
-            <div className="flex items-center justify-center w-8 h-8 cursor-pointer">
-              <FaRegTimesCircle className="text-white text-xl" />
-            </div>
+        {/* Right Side */}
+        <div className="flex-1 flex flex-col">
+          {/* Mobile Logo */}
+          <div className="md:hidden bg-gray-100 py-2 flex justify-center items-center">
+            <Image
+              src="/Logo.png"
+              alt="Company Logo"
+              width={100}
+              height={60}
+              className="object-cover"
+            />
           </div>
-        </div>
 
-        {/* Contact & User Section */}
-        <div className="flex justify-between items-center bg-[#0B6BC4] text-white px-4 py-3">
-          {/* Left Side - Contact Details */}
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <MdEmail className="text-white w-5 h-5" />
-              <span className="text-sm">email@example.com</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <MdPhone className="text-white w-5 h-5" />
-              <span className="text-sm">+123 456 7890</span>
+          {/* Top Banner */}
+          <div className="bg-[#0A2540] text-white px-2 sm:px-4 py-2 flex items-center justify-between">
+            <p className="text-[10px] sm:text-xs md:text-sm flex-1 mr-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
+              reiciendis asperiores vitae doloremque a nisi pariatur amet deleniti
+              quo id iusto!
+            </p>
+            <div className="flex items-center gap-2 sm:gap-4">
+              <button className="bg-white text-blue-950 px-2 sm:px-4 py-1 sm:py-2 rounded-sm hover:bg-[#E67002] flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm">
+                View More
+                <FontAwesomeIcon className="w-3 h-3 sm:w-4 sm:h-4" icon={faArrowRight} />
+              </button>
+              <FaRegTimesCircle className="text-white w-5 h-5 sm:w-6 sm:h-6 cursor-pointer" />
             </div>
           </div>
 
-          {/* Right Side - User Options */}
-          <div className="flex items-center space-x-6 mr-1">
-            <div className="flex items-center space-x-2">
-              <FaWhatsapp className="text-white w-5 h-5" />
+          {/* Contact & User Section */}
+          <div className="bg-[#0B6BC4] text-white px-2 sm:px-4 py-2 sm:py-3 flex flex-row md:flex-col lg:flex-row justify-between  items-center gap-2 sm:gap-0">
+            {/* Contact Details */}
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
+              <div className="flex items-center gap-2">
+                <MdEmail className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-xs sm:text-sm">email@example.com</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MdPhone className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-xs sm:text-sm">+123 456 7890</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-             
-              <select className="bg-transparent text-sm font-semibold border-none outline-none">
+
+            {/* User Options */}
+            <div className="flex items-center gap-3 sm:gap-6">
+              <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer" />
+              <select className="bg-transparent text-xs sm:text-sm border-none outline-none">
                 <option>USD</option>
                 <option>EUR</option>
                 <option>INR</option>
               </select>
-            </div>
-            <div className="flex items-center ">
-              <FaUserCircle className="text-white w-6 h-5" />
+              <FaUserCircle className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer" />
             </div>
           </div>
-        </div>
 
-        {/* Navbar Component */}
-        <Navbar />
+          {/* Navbar */}
+          <Navbar />
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 
