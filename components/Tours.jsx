@@ -13,8 +13,8 @@ const Tours = () => {
       {/* Left Side - Text Content */}
       <div className="md:col-span-1 md:mt-12 mt-16">
         <h3 className="text-xl font-bold text-[#E67002] mb-1">Checkout</h3>
-        <h3 className="text-lg font-bold text-blue-950 mb-5">Spectural Destination</h3>
-        <p className="text-gray-600 mt-2 text-sm mb-6">
+        <h3 className="text-lg font-bold text-[#0A2540] mb-5">Spectural Destination</h3>
+        <p className="text-[#0A2540] mt-2 text-xs font-normal leading-relaxed mb-6">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum asperiores ut itaque ipsa, aspernatur dicta ab facilis a est tempore ratione veritatis quo nostrum exercitationem deleniti placeat cum natus qui aliquid incidunt excepturi eum culpa. Officiis perferendis,  
         </p>
 
@@ -28,7 +28,7 @@ const Tours = () => {
       </div>
 
       {/* Right Side - Carousel (3 Columns) */}
-      <div className="md:col-span-3">
+      <div className="md:col-span-3 ">
         <Slider></Slider>
       </div>
 

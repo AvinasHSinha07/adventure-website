@@ -46,19 +46,19 @@ const Slider = () => {
   return (
     
     <Carousel className="w-full h-full relative">
-      <CarouselContent className="-ml-1">
+      <CarouselContent className=" ">
         {slides.map((slide) => (
-          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3 ">
-            <div className="">
+          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3 pl-4 rounded-sm">
+            <div className="rounded-2xl">
               <Card className="relative group overflow-hidden py-0  rounded-sm">
                 
                 {/* Background Image */}
-                <div className="relative w-[415px] h-[485px] rounded-xs">
+                <div className="relative w-[415px] h-[485px] rounded-sm">
                   <Image
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className="object-cover w-full h-full transition duration-300 group-hover:scale-105 rounded-xs"
+                    className="object-cover w-full h-full transition duration-300 group-hover:scale-105 rounded-sm"
                   />
                 </div>
 

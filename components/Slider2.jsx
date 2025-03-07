@@ -25,16 +25,16 @@ const Slider2 = () => {
     <Carousel className="w-full">
       <CarouselContent className="-ml-2">
         {slides.map((slide) => (
-          <CarouselItem key={slide.id} className="basis-1/5 px-2 flex justify-center">
-            <Card className="overflow-hidden py-0 w-[350px]">
+          <CarouselItem key={slide.id} className="md:basis-1/2 lg:basis-1/5 px-2 flex justify-center">
+            <Card className="overflow-hidden py-0 w-[400px] rounded-sm">
               {/* Image Container */}
-              <div className="flex justify-center items-center w-full h-[300px]">
+              <div className="flex justify-center items-center w-full h-[300px] rounded-sm">
                 <Image
                   src={slide.image}
                   alt={`Slide ${slide.id}`}
-                  width={250}
-                  height={200}
-                  className="object-cover w-full h-full transition duration-300 hover:scale-105"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full transition duration-300 hover:scale-105 rounded-sm"
                 />
               </div>
             </Card>
