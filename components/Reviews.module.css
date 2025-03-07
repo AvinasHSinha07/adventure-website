@@ -1,0 +1,9 @@
+.outlinedText {
+   
+   
+    text-fill-color: white;
+    text-stroke: 3px white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px white;
+    -moz-text-fill-color: transparent;
+  }

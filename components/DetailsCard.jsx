@@ -37,7 +37,14 @@ const DetailsCard = () => {
         <button
           onClick={handleWishlistClick} // Handle wishlist button click
           className="absolute top-4 right-4 z-30 text-white tooltip tooltip-left"
-          data-tip={tooltipVisible ? (isWishlisted ? "Added to Wishlist" : "Add to Wishlist") : ""}
+          data-tip={
+            tooltipVisible
+              ? isWishlisted
+                ? "Add to Wishlist"
+                : "Add to Wishlist"
+              : ""
+          }
+  
         >
           <BsBookmarkCheckFill className="text-white" />
         </button>
