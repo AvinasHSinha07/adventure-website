@@ -58,7 +58,7 @@ const Events = () => {
             key={index}
             className="flex bg-white rounded-lg shadow-md overflow-hidden group"
           >
-            <div className="relative w-[200px] h-[150px] flex-shrink-0">
+            <div className="relative w-[200px] h-[150px]">
               <Image
                 src={event.imgUrl}
                 alt={event.title}

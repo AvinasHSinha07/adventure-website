@@ -6,15 +6,15 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaWhatsapp, FaUserCircle } from "react-icons/fa";
-
+import { SiMinutemailer } from "react-icons/si";
 const Header = () => {
   return (
     <header className="w-full">
       <div className="flex flex-col md:flex-row ">
         {/* Left Side - Logo and Notification */}
         <div className="md:w-2/12 flex-col hidden md:flex  bg-gray-100">
-  <div className="bg-[#FF7902] py-2 text-center">
-    <p className="text-white text-sm md:text-lg font-semibold">Notification Bar Tag</p>
+  <div className="bg-[#FF7902] py-6 text-center">
+    <p className="text-white text-xs font-bold">Notification Bar Tag</p>
   </div>
   <div className="flex items-center justify-center w-full h-full">
     <Image
@@ -41,18 +41,16 @@ const Header = () => {
           </div>
 
           {/* Top Banner */}
-          <div className="bg-[#0A2540] text-white px-2 sm:px-4 py-2 flex items-center justify-between">
-            <p className="text-[10px] sm:text-xs md:text-sm flex-1 mr-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
-              reiciendis asperiores vitae doloremque a nisi pariatur amet deleniti
-              quo id iusto!
+          <div className="bg-[#0A2540] text-white px-2 sm:px-4 py-3 flex items-center justify-between">
+            <p className="text-[10px] sm:text-xs md:text-xs mr-2 w-9/12">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed optio, nulla hic rem, animi quidem minus dolores itaque voluptatibus eligendi necessitatibus facilis velit modi vitae veritatis asperiores repellat distinctio ipsam.
             </p>
             <div className="flex items-center gap-2 sm:gap-4">
-              <button className="bg-white text-blue-950 px-2 sm:px-4 py-1 sm:py-2 rounded-sm hover:bg-[#E67002] flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm">
+              <button className="bg-white text-blue-950 px-2 md:px-4 py-2 sm:py-3 rounded-xs hover:bg-[#E67002] flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-semibold">
                 View More
                 <FontAwesomeIcon className="w-3 h-3 sm:w-4 sm:h-4" icon={faArrowRight} />
               </button>
-              <FaRegTimesCircle className="text-white w-5 h-5 sm:w-6 sm:h-6 cursor-pointer" />
+              <FaRegTimesCircle className="text-white w-5 h-5 sm:w-5 sm:h-5 cursor-pointer" />
             </div>
           </div>
 
@@ -61,24 +59,25 @@ const Header = () => {
             {/* Contact Details */}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
               <div className="flex items-center gap-2">
-                <MdEmail className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-xs sm:text-sm">email@example.com</span>
+                {/* <MdEmail  /> */}
+                <SiMinutemailer className="w-4 h-4 sm:w-4 sm:h-4" />
+                <span className="text-xs sm:text-xs font-semibold">email@example.com</span>
               </div>
               <div className="flex items-center gap-2">
-                <MdPhone className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-xs sm:text-sm">+123 456 7890</span>
+              <FaWhatsapp className="w-4 h-4 sm:w-4 sm:h-4"/>
+                <span className="text-xs sm:text-xs font-semibold">+123 456 7890</span>
               </div>
             </div>
 
             {/* User Options */}
             <div className="flex items-center gap-3 sm:gap-6">
-              <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer" />
-              <select className="bg-transparent text-xs sm:text-sm border-none outline-none">
+              <FaWhatsapp className="w-4 h-4 sm:w-4 sm:h-4 cursor-pointer" />
+              <select className="bg-transparent text-xs sm:text-xs border-none font-bold outline-none">
                 <option>USD</option>
                 <option>EUR</option>
                 <option>INR</option>
               </select>
-              <FaUserCircle className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer" />
+              <FaUserCircle className="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer" />
             </div>
           </div>
 

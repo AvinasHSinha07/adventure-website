@@ -48,17 +48,17 @@ const Slider = () => {
     <Carousel className="w-full h-full relative">
       <CarouselContent className="-ml-1">
         {slides.map((slide) => (
-          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3 ">
             <div className="">
-              <Card className="relative group overflow-hidden py-0 ">
+              <Card className="relative group overflow-hidden py-0  rounded-sm">
                 
                 {/* Background Image */}
-                <div className="relative w-[400px] h-[450px]">
+                <div className="relative w-[415px] h-[485px] rounded-xs">
                   <Image
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className="object-cover w-full h-full transition duration-300 group-hover:scale-105"
+                    className="object-cover w-full h-full transition duration-300 group-hover:scale-105 rounded-xs"
                   />
                 </div>
 
@@ -70,8 +70,8 @@ const Slider = () => {
 
                 {/* Title and Button */}
                 <CardContent className="absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
-                  <h2 className="text-xl font-bold">{slide.title}</h2>
-                  <button className="bg-[#0B6BC4]  text-white px-6 py-2 rounded-lg mt-auto opacity-90 hover:opacity-100 transition">
+                  <h2 className="text-xl font-bold hidden">{slide.title}</h2>
+                  <button className="bg-[#0B6BC4]  text-white px-4 absolute bottom-12 py-3 rounded-xs text-sm font-semibold mt-auto opacity-90 hover:opacity-100 transition">
                     07 Tours
                   </button>
                 </CardContent>
