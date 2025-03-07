@@ -14,7 +14,7 @@ const DetailsCard = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="card bg-base-100 shadow-sm w-full sm:w-80 md:w-96">
+    <div className="card bg-base-100 shadow-sm w-full ">
       {/* Image Section with Wishlist Icon and Hover Buttons */}
       <figure 
         className="relative w-full h-56 overflow-hidden"
