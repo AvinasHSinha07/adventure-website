@@ -7,6 +7,7 @@ import Events from "@/components/Events";
 import Awards from "@/components/Awards";
 import Recommendation from "@/components/Recommendation";
 import Slider2 from "@/components/Slider2";
+import TourDetails from "@/components/TourDetails";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Banner></Banner>
       <Tours></Tours>
       <Events></Events>
+      <TourDetails></TourDetails>
       <Awards></Awards>
       <Recommendation></Recommendation>
       {/* <Slider2></Slider2> */}
