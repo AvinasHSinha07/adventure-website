@@ -4,6 +4,7 @@ import styles from "./Reviews.module.css";
 import ReviewSlider1 from "./ReviewSlider1";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import VerticalCarousel from "./VerticalCarousel";
 
 const Reviews = () => {
   return (
@@ -81,11 +82,7 @@ const Reviews = () => {
 
         <div className="w-full md:w-1/2 p-6 text-white">
           {/* Right Column */}
-          <h2 className="text-2xl font-bold">What They Say</h2>
-          <p className="mt-4">
-            Suspendisse potenti. Integer nec odio. Praesent libero. Sed cursus
-            ante dapibus diam.
-          </p>
+        <VerticalCarousel></VerticalCarousel>
         </div>
       </div>
     </div>
