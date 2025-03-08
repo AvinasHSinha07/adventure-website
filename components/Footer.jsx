@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 const Footer = () => {
   const icons = [
     { icon: <FaFacebookF />, color: "#1877F2" },
@@ -73,16 +74,16 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Destinations</h4>
               <ul className="space-y-2 text-sm">
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Nepal
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Tibet
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Bhutan
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Multi Country
                 </li>
               </ul>
@@ -92,19 +93,19 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Activities</h4>
               <ul className="space-y-2 text-sm">
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Trekking
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Climbing
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Mountaineering
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
-                  Sightseeing
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
+                Sightseeinghover
                 </li>
-              </ul>
+               </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4 hidden md:block">
@@ -112,39 +113,43 @@ const Footer = () => {
               </h4>
 
               <ul className="space-y-2 text-sm">
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Trekking
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Climbing
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Mountaineering
                 </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
+                <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   Sightseeing
                 </li>
               </ul>
             </div>
 
             {/* Column 4: Contact Us */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
-                  +977 98510 99 000
-                </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
-                  info@himalayanleisure.com
-                </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
-                  Thamel, Bhagwati Bahal
-                </li>
-                <li className="hover:text-[#FF7902] cursor-pointer transition">
-                  Kathmandu, Nepal
-                </li>
-              </ul>
-            </div>
+           
+
+<div>
+  <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+  <ul className="space-y-2 text-sm">
+    <li className="flex items-center gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+      <FaPhoneAlt className="text-[#8A6A9B]" />
+      +977 98510 99 000
+    </li>
+    <li className="flex items-center gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+      <FaEnvelope className="text-[#8A6A9B]" />
+      info@gmail.com
+    </li>
+    <li className="flex items-center gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+      <FaMapMarkerAlt className="text-[#8A6A9B]" />
+      Thamel, Bhagwati Bahal <br />  Kathmandu, Nepal
+    </li>
+   
+  </ul>
+</div>
+
           </div>
           <div className="flex flex-col md:flex-row items-start lg:gap-28 gap-4 w-full">
             {/* Email Input with Button */}
