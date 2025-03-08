@@ -74,7 +74,7 @@ const VerticalCarousel = () => {
       <Carousel opts={{ align: "start" }} orientation="vertical">
         <CarouselContent className="-mt-1 h-[650px] sm:h-[650px] md:h-[650px] lg:h-[650px]">
           {reviews.map((review) => (
-            <CarouselItem key={review.id} className="pt-1 md:basis-1/4 basis-full sm:basis-1/2">
+            <CarouselItem key={review.id} className="pt-1 md:basis-1/4 basis-1/2 sm:basis-1/2">
               <div className="">
                 <Card className="bg-white rounded-sm overflow-hidden border py-0 border-gray-200">
                   <CardContent className="flex px-0 flex-col sm:flex-row">
