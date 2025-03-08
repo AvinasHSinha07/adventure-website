@@ -31,7 +31,7 @@ const ReviewSlider1 = () => {
               key={slide.id}
               className="md:basis-1/2 lg:basis-1/2 xl:basis-1/2 2xl:basis-1/3 px-2 flex justify-center"
             >
-              <Card className="overflow-hidden py-0 w-[350px] rounded-md shadow-lg">
+              <Card className="overflow-hidden py-0 w-[350px] border-none">
                 {/* Image Container */}
                 <div className="relative flex justify-center items-center w-full h-[400px] rounded-md overflow-hidden">
                   <Image
