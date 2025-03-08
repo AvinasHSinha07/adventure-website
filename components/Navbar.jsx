@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar bg-base-100 shadow-md relative z-50 px-2">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between">
           {/* Center Menu - Hidden on mobile, visible on large screens */}
           <div className="navbar-start hidden lg:flex">
             <ul className="menu menu-horizontal p-0 space-x-1 flex-nowrap">
@@ -93,12 +93,12 @@ const Navbar = () => {
 
           {/* Right Side - Properly aligned on both mobile and large screens */}
           <div className="navbar-end flex items-center w-full justify-between lg:w-auto">
-            <button className="bg-[#0B6BC4] text-white hover:bg-white hover:text-black text-xs font-semibold sm:text-xs px-4 sm:px-6 py-2 flex items-center">
+            <button className="bg-[#0B6BC4] text-white  hover:text-black text-xs font-semibold sm:text-xs px-4 sm:px-6 py-4 flex items-center">
               Manual Deposit <FaArrowRight className="ml-2" />
             </button>
             <button
               onClick={toggleMobileMenu}
-              className="btn btn-ghost p-2 lg:block"
+              className="  p-2 lg:block"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (

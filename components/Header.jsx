@@ -42,8 +42,8 @@ const Header = () => {
 
           {/* Top Banner */}
           <div className="bg-[#0A2540] text-white px-2 sm:px-4 py-3 flex items-center justify-between">
-            <p className="text-[10px] sm:text-xs md:text-xs mr-2 w-9/12">
-             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed optio, nulla hic rem, animi quidem minus dolores itaque voluptatibus eligendi necessitatibus facilis velit modi vitae veritatis asperiores repellat distinctio ipsam.
+            <p className="text-[10px] sm:text-xs md:text-xs mr-2 md:w-9/12 w-1/2">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed optio, nulla hic rem, animi quidem minus dolores itaque voluptatibus eligendi
             </p>
             <div className="flex items-center gap-2 sm:gap-4">
               <button className="bg-white text-blue-950 px-2 md:px-4 py-2 sm:py-3 rounded-xs hover:bg-[#E67002] flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs font-semibold">

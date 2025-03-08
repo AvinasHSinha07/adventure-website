@@ -25,7 +25,7 @@ const Slider2 = () => {
     <Carousel className="w-full">
       <CarouselContent className="-ml-2">
         {slides.map((slide) => (
-          <CarouselItem key={slide.id} className="md:basis-1/2 lg:basis-1/5 px-2 flex justify-center">
+          <CarouselItem key={slide.id} className="md:basis-1/2 lg:basis-1/5 xl:basis-1/5 2xl:basis-1/6 px-2 flex justify-center">
             <Card className="overflow-hidden py-0 w-[400px] rounded-sm">
               {/* Image Container */}
               <div className="flex justify-center items-center w-full h-[300px] rounded-sm">

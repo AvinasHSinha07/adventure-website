@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -128,3 +135,4 @@ html, body {
     @apply bg-background text-foreground;
   }
 }
+
