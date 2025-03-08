@@ -23,17 +23,17 @@ const Footer = () => {
 
   return (
     <div className="bg-[#160220]">
-      <div className="bg-[#160220] flex flex-col md:flex-row items-center justify-center ">
+      <div className="bg-[#160220] flex flex-col md:flex-row items-start md:items-center justify-start ">
         {/* Left Section */}
-        <div className="w-full md:w-1/2 lg:w-1/3 border-r-0 md:border-r border-[#350050] py-6 md:py-10 md:pl-6 lg:pl-10">
+        <div className="w-full md:w-1/2 lg:w-1/3 border-r-0 md:border-r border-[#350050] py-6 md:py-10 md:pl-6 lg:pl-10 px-4 ">
           <Image
             src="/footer.png"
             alt="footer logo"
             width={170}
             height={130}
-            className="object-cover w-40 md:w-48 transition duration-300 group-hover:scale-105 mx-auto md:mx-0"
+            className="object-cover w-40 md:w-48 transition duration-300 group-hover:scale-105  "
           />
-          <p className="text-[#FFFFFF] mt-4 text-xs font-normal leading-relaxed mb-6 text-center md:text-left">
+          <p className="text-[#FFFFFF] mt-4 text-xs font-normal leading-relaxed mb-6 text-left md:text-left">
             Himalayan Leisure is a boutique travel company specializing in
             adventure and cultural tours across the Himalayan region. Known for
             its personalized services, expert guides, and deep local knowledge,
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 lg:w-2/3 py-6 md:py-10 px-4  flex flex-col gap-8">
+        <div className="w-full md:w-1/2 lg:w-2/3 py-6 md:py-10 px-4 lg:pt-20  flex flex-col gap-8">
           <div className="flex items-center gap-2 justify-center md:justify-start">
             <Image
               src="/image 8.png"
@@ -64,7 +64,7 @@ const Footer = () => {
               height={130}
               className="object-cover w-10 h-10 md:w-12 md:h-12 transition duration-300 group-hover:scale-105"
             />
-            <p className="text-[#FFFFFF] text-xs font-normal leading-relaxed text-center md:text-left">
+            <p className="text-[#FFFFFF] text-xs font-normal leading-relaxed text-center md:text-left w-10/12 md:w-auto">
               We would like to be in touch. Let us know your doubts or queries
               24/7
             </p>
@@ -78,8 +78,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-2 gap-6 md:gap-8 text-white justify-between">
             {/* Destinations */}
             <div>
-              <h4 className="text-base md:text-lg font-semibold mb-4 text-center md:text-left">Destinations</h4>
-              <ul className="space-y-2 text-sm text-center md:text-left">
+              <h4 className="text-base md:text-lg font-semibold mb-4 text-left md:text-left">Destinations</h4>
+              <ul className="space-y-2 text-sm text-left md:text-left">
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Nepal</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Tibet</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Bhutan</li>
@@ -89,8 +89,8 @@ const Footer = () => {
 
             {/* Activities 1 */}
             <div>
-              <h4 className="text-base md:text-lg font-semibold mb-4 text-center md:text-left">Activities</h4>
-              <ul className="space-y-2 text-sm text-center md:text-left">
+              <h4 className="text-base md:text-lg font-semibold mb-4 text-left md:text-left">Activities</h4>
+              <ul className="space-y-2 text-sm text-left md:text-left">
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Trekking</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Climbing</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Mountaineering</li>
@@ -100,8 +100,8 @@ const Footer = () => {
 
             {/* Activities 2 (Hidden on small screens) */}
             <div className="hidden md:block">
-              <h4 className="text-base md:text-lg font-semibold mb-4 text-center md:text-left invisible"> </h4>
-              <ul className="space-y-2 text-sm text-center md:text-left">
+              <h4 className="text-base md:text-lg font-semibold mb-4 text-left md:text-left invisible"> </h4>
+              <ul className="space-y-2 text-sm text-left md:text-left">
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Trekking</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Climbing</li>
                 <li className="hover:text-white text-[#8A6A9B] cursor-pointer transition">Mountaineering</li>
@@ -111,17 +111,17 @@ const Footer = () => {
 
             {/* Contact Us */}
             <div>
-              <h4 className="text-base md:text-lg font-semibold mb-4 text-center md:text-left">Contact Us</h4>
-              <ul className="space-y-2 text-sm text-center md:text-left">
-                <li className="flex items-center justify-center md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+              <h4 className="text-base md:text-lg font-semibold mb-4 text-left md:text-left">Contact Us</h4>
+              <ul className="space-y-2 text-sm text-left md:text-left">
+                <li className="flex items-center justify-start md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   <FaPhoneAlt className="text-[#8A6A9B]" />
                   +977 98510 99 000
                 </li>
-                <li className="flex items-center justify-center md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+                <li className="flex items-center justify-start md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   <FaEnvelope className="text-[#8A6A9B]" />
                   info@gmail.com
                 </li>
-                <li className="flex items-center justify-center md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
+                <li className="flex items-center justify-start md:justify-start gap-2 hover:text-white text-[#8A6A9B] cursor-pointer transition">
                   <FaMapMarkerAlt className="text-[#8A6A9B]" />
                   <span>Thamel, Bhagwati Bahal <br /> Kathmandu, Nepal</span>
                 </li>
@@ -130,8 +130,8 @@ const Footer = () => {
           </div>
 
           {/* Subscribe Section */}
-          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 w-full">
-            <div className="flex flex-col items-center md:items-start w-full md:w-auto">
+          <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-6 w-full">
+            <div className="flex flex-col items-start md:items-start w-full md:w-auto">
               <div className="flex w-full max-w-xs">
                 <input
                   type="email"
@@ -161,7 +161,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="text-white px-4 py-6 md:px-6 md:py-10 lg:px-10 flex flex-col md:flex-row xl:items-start items-center justify-between border-t border-[#350050] gap-6">
-        <div className="text-center md:text-left">
+        <div className="text-left  md:text-left">
           <p className="text-white text-xs font-normal leading-relaxed">
             © Copyright 2024, The Website Company, Inc.
           </p>
@@ -170,8 +170,8 @@ const Footer = () => {
             without our written agreement.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full md:w-auto">
-          <div className="flex items-center gap-2 justify-center">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 w-full md:w-auto">
+          <div className="flex items-center gap-2 justify-start">
             <p className="text-[10px] text-[#FF7902]">Secured By</p>
             <Image
               src="/Layer_1.png"
