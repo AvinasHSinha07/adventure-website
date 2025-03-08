@@ -6,21 +6,23 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FaHeart } from "react-icons/fa";
 import { BsBookmarkCheckFill } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 
 const DetailsCard = () => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const [tooltipVisible, setTooltipVisible] = useState(false); // New state for tooltip visibility
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false); // New state for tooltip visibility
 
   const handleWishlistClick = () => {
     setIsWishlisted(!isWishlisted);
-    setTooltipVisible(!tooltipVisible); // Toggle tooltip visibility when wishlist button is clicked
+    setIsTooltipOpen(true); // Show tooltip on click
+    // Optional: Hide tooltip after a delay
+    setTimeout(() => setIsTooltipOpen(false), 2000); // Hides after 2 seconds
   };
 
   return (
-    <div className="card bg-base-100 shadow-sm w-full ">
+    <div className="card bg-base-100 shadow-sm w-full">
       {/* Image Section with Wishlist Icon and Hover Buttons */}
       <figure
         className="relative w-full h-56 overflow-hidden"
@@ -33,21 +35,28 @@ const DetailsCard = () => {
           fill
           className="object-cover rounded-t-lg"
         />
-        {/* Wishlist Icon */}
+        {/* Wishlist Icon with React Tooltip */}
         <button
-          onClick={handleWishlistClick} // Handle wishlist button click
-          className="absolute top-4 right-4 z-30 text-white tooltip tooltip-left"
-          data-tip={
-            tooltipVisible
-              ? isWishlisted
-                ? "Add to Wishlist"
-                : "Add to Wishlist"
-              : ""
-          }
-  
+          onClick={handleWishlistClick}
+          className="absolute top-4 right-4 z-30 text-white"
+          data-tooltip-id="wishlist-tooltip"
         >
           <BsBookmarkCheckFill className="text-white" />
         </button>
+        <Tooltip
+        className="text-xs"
+          id="wishlist-tooltip"
+          content={isWishlisted ? "Removed" : "Add to Wishlist"}
+          place="left-start" // Fixed to 'left-start'
+          isOpen={isTooltipOpen} // Controls visibility manually
+          style={{
+            zIndex: 50,
+            maxWidth: "150px", // Limits the width to prevent overflow
+            whiteSpace: "normal", // Allows text to wrap if it exceeds maxWidth
+            textAlign: "left", // Aligns text to the left for readability
+            padding: "6px 10px", // Adds padding for better appearance
+          }}
+        />
 
         {/* Hover Buttons */}
         {isHovered && (
@@ -108,7 +117,7 @@ const DetailsCard = () => {
         </div>
 
         {/* Features Section */}
-        <div className="flex justify-start items-start gap-6 md:gap-8 lg: mt-3">
+        <div className="flex justify-start items-start gap-4 md:gap-8 lg:gap-12 xl:gap-6 mt-3">
           <div className="flex items-center gap-2 w-1/2 sm:w-auto">
             <CiGlobe className="text-2xl" />
             <div>
