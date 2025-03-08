@@ -9,6 +9,7 @@ import Recommendation from "@/components/Recommendation";
 import Slider2 from "@/components/Slider2";
 import TourDetails from "@/components/TourDetails";
 import Reviews from "@/components/Reviews";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <Reviews></Reviews>
       <Recommendation></Recommendation>
       {/* <Slider2></Slider2> */}
-      
+      <Footer></Footer>
     </div>
   );
 }
