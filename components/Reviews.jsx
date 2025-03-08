@@ -8,7 +8,7 @@ import VerticalCarousel from "./VerticalCarousel";
 
 const Reviews = () => {
   return (
-    <div className="relative w-full min-h-[120vh]    flex items-center justify-center">
+    <div className="relative w-full lg:min-h-[120vh]  flex items-center justify-center ">
       {/* Background Image using Next.js Image component */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -24,11 +24,11 @@ const Reviews = () => {
       <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 
       {/* Main content container */}
-      <div className="relative z-20 w-full h-full flex items-center justify-center px-4">
-        <div className="w-full md:w-1/2 p-6 text-white">
+      <div className="relative z-20 w-full h-full flex items-center justify-center flex-col lg:flex-row md:px-10 md:py-10 px-4 py-10">
+        <div className="w-full md:w-1/2  text-white">
           {/* Left Column */}
           <h2
-            className={`${styles.outlinedText} text-7xl font-extrabold text-white opacity-80 uppercase tracking-widest`}
+            className={`${styles.outlinedText} lg:text-7xl text-5xl mb-4 font-extrabold text-white opacity-80 uppercase tracking-widest`}
           >
             Reviews
           </h2>

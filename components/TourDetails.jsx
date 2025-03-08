@@ -6,7 +6,7 @@ const TourDetails = () => {
     <div className="relative md:px-10 md:py-10 px-2 py-10">
       {/* Outlined "Recommended" Text Behind */}
       <h1
-  className={`${styles.outlinedText} absolute top-20 xl:block hidden  xl:left-[32%]   text-[5rem] font-extrabold text-gray-200 opacity-10 uppercase tracking-widest`}
+  className={`${styles.outlinedText} absolute top-5 xl:block hidden     text-[5rem] font-extrabold text-gray-200 opacity-10 uppercase tracking-widest`}
 >
   Recommended
 </h1>   

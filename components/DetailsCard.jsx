@@ -108,7 +108,7 @@ const DetailsCard = () => {
         </div>
 
         {/* Features Section */}
-        <div className="flex justify-between items-center gap-6 md:gap-0 mt-3">
+        <div className="flex justify-start items-start gap-6 md:gap-8 lg: mt-3">
           <div className="flex items-center gap-2 w-1/2 sm:w-auto">
             <CiGlobe className="text-2xl" />
             <div>

@@ -48,7 +48,7 @@ const Slider = () => {
     <Carousel className="w-full h-full relative">
       <CarouselContent className=" ">
         {slides.map((slide) => (
-          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3 pl-4 rounded-sm">
+          <CarouselItem key={slide.id} className=" md:basis-1/2 lg:basis-1/3 xl:basis-1/3 2xl:basis-1/4  pl-4 rounded-sm">
             <div className="rounded-2xl">
               <Card className="relative group overflow-hidden py-0  rounded-sm">
                 
